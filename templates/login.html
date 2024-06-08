@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styleclear.css ">
-    <link rel="stylesheet" href="../static/authorisation.css">
+
+    <link rel="stylesheet" href="../static/css/template-settings/clear.css ">
+    <link rel="stylesheet" href="../static/css/template-settings/root-settings.css">
+    <link rel="stylesheet" href="../static/css/template-settings/header.css">
+    <link rel="stylesheet" href="../static/css/template-settings/post.css">
+    <link rel="stylesheet" href="../static/css/template-settings/outher.css">
+
+    <link rel="stylesheet" href="../static/css/authorisation.css">
     
-    <script src="../static/authorisation.js" defer></script>
-    <title>Autorisation</title>
+    <script src="../static/javascript/authorisation.js" type="module" defer></script>
+
+    <title>Login</title>
 
 </head>
 <body>
@@ -16,16 +23,15 @@
         <a href="/"><h1>Forum-d</h1></a>
     </div>
     <div id="window">
-        <div id="autorisation">
-            <div id="autorisation__elem">
-                
+        <div id="authorisation">
+            <div id="authorisation__elem">
                 <div class="input__elem">
                     <input type="text" placeholder="username">
                 </div>
                 <div class="input__elem">
                     <input type="password" placeholder="password">
                 </div>
-                <form action="/authorisation" method="post">
+                <form action="/login" method="post">
                     <button id="login" type="submit">Login</button>
                 </form>
                 <a href="/registration"><button id="registration">Registration</button></a>
