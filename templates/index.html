@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/styleclear.css">
+    <link rel="stylesheet" href="../static/index.css">
+
+    <script src="../static/index.js" defer> </script>
+
+    <title>Forum-d</title>
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <a href="/starpage" id="star-button"></a>
+            <div id="theme-button"></div>
+            <a href="/"><h1>Forum-d</h1></a>
+            <div id="user-panel"><a href="/autorisation">autorisation</a></div>
+        </div>
+        <div class="content">
+            <div id="center-panel">
+                <div id="search-panel">
+                    <div id="search-post">
+                        <input type="text" placeholder="enter post name">
+                    </div>
+                </div>
+                <div id="posts">
+                    <div class="post">
+                        <div class="post__options">
+                            <img src="../static/star.png" alt="star image" class="star">
+                            <img src="../static/comment.png" alt="star image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="update-posts">
+            <form action="/" method="post">
+                <button type="submit"><img src="../static/icons8-перезапуск.gif"></button>
+            </form>
+
+        </div>
+        <div class="footer">
+            <p>Open source product</p>
+        </div>
+    </div>
+</body>
+</html>

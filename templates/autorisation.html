@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styleclear.css ">
+    <link rel="stylesheet" href="../static/autorisation.css">
+    
+    <script src="../static/autorisation.js" defer></script>
+    <title>Autorisation</title>
+
+</head>
+<body>
+    <div id="header">
+        <div id="theme-button"></div>
+        <a href="/"><h1>Forum-d</h1></a>
+    </div>
+    <div id="window">
+        <div id="autorisation">
+            <div id="autorisation__elem">
+                
+                <div class="input__elem">
+                    <input type="text" placeholder="username">
+                </div>
+                <div class="input__elem">
+                    <input type="password" placeholder="password">
+                </div>
+                <form action="/autorisation" method="post">
+                    <button id="login" type="submit">Login</button>
+                </form>
+                <a href="/registration"><button id="registration">Registration</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

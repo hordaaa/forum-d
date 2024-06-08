@@ -1,0 +1,149 @@
+:root {
+    --header-color: rgb(255,250,240);
+    --center-panel-color: rgb(252,252,238);
+    --user-panel-color: rgb(248,248,255);
+    --text-color: rgb(0, 0, 0);
+    --background-image: url("bumaga.avif");
+    --search-color: rgb(234,230,202);
+}
+
+.dark-mode {
+    --header-color: #494949;
+    --center-panel-color: #737373;
+    --user-panel-color: #585858;
+    --text-color: rgb(255, 255, 255);
+    --background-image: url("darkbumaga.avif");
+    --search-color: rgb(77, 77, 77);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    background-size: 100%;
+    transition: 0.5s;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.update-posts button:hover{
+    scale: 1.1;
+}
+
+.comment {
+    height: 60px;
+    cursor: pointer;
+    background-image: url("comment.png");
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.comment:hover {
+    transform: scale(1.2);
+    background-image: url("blackcomment.png");
+
+}
+
+.star {
+    height: 60px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.star:hover {
+    transform: scale(1.15);
+}
+
+.post__options > a {
+    margin: 0;
+    padding: 0;
+}
+
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.post:nth-child(odd) {
+    background-color: #C5D0E6;
+}
+
+.post:nth-child(even) {
+    background-color: #CCCCFF;
+}
+
+.post {
+    width: 95%;
+    height:max-content;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    transition: 0.05s;
+    padding: 10px;
+    box-shadow: 1px 1px 3px black;
+    display: flex;
+}
+
+.post__text{
+    max-width: 93%;
+    text-decoration: none;
+    color: black;
+}
+
+.post__text::first-line{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.post:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid green;
+}
+
+#header {
+    background-color: var(--header-color);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+#theme-button {
+    display: inline-block;
+    height: 80%;
+    width: 64px;
+    background-size: 70%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: azure;
+    background-image: url("day.png");
+    position: absolute;
+    left: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#theme-button:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: var(--text-color);
+    display: inline-block;
+    font-weight: 800;
+    font-size: 40px;
+}
+
