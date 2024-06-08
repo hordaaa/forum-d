@@ -22,9 +22,9 @@ def registration():
     return render_template("registration.html")
 
 
-@app.route("/autorisation")
-def autorisation():
-    return render_template("autorisation.html")
+@app.route("/authorisation")
+def authorisation():
+    return render_template("authorisation.html")
 
 
 @app.route("/<int:pos>")

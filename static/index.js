@@ -72,6 +72,6 @@ userPanel.addEventListener("click", event => {
 
     userPanel.style.backgroundColor = ["var(--user-panel-color)", "var(--search-color)"][+login]
     starButton.style.display = ["inline-block", "none"][+login]
-    userPanel.innerHTML = `<a href="/${login ? "autorisation": "homepage"}">${login ? "autorisation": "home"}</a>`
+    userPanel.innerHTML = `<a href="/${login ? "authorisation": "homepage"}">${login ? "log-in": "home"}</a>`
 
 })
