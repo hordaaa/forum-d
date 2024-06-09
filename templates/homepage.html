@@ -12,7 +12,7 @@
 
     <script src="../static/javascript/homepage.js" type="module" defer></script>
 
-    <title>User homepage ---</title>
+    <title>{{ user }} homepage</title>
 </head>
 <body>
     <div id="header">
@@ -29,7 +29,7 @@
             <a href="/" id="settings">
                 <div id="settings-content">
                     <label for="avatar" class="avatar-label"></label><input type="file" class="my" id="avatar" name="avatar">
-                    <div id="username"><p>Денис Бакулин</p></div>
+                    <div id="username"><p>{{ user }}</p></div>
                     <div id="userid"><p>@Denis</p></div>
                     <div id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat?</div>
                 </div>

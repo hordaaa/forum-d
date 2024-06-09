@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="../static/css/template-settings/post.css">
     <link rel="stylesheet" href="../static/css/template-settings/outher.css">
 
-    <link rel="stylesheet" href="../static/css/authorisation.css">
+    <link rel="stylesheet" href="../static/css/login.css">
     
-    <script src="../static/javascript/authorisation.js" type="module" defer></script>
+    <script src="../static/javascript/login.js" type="module" defer></script>
 
     <title>Login</title>
 
@@ -25,14 +25,15 @@
     <div id="window">
         <div id="authorisation">
             <div id="authorisation__elem">
-                <div class="input__elem">
-                    <input type="text" placeholder="username">
-                </div>
-                <div class="input__elem">
-                    <input type="password" placeholder="password">
-                </div>
-                <form action="/login" method="post">
-                    <button id="login" type="submit">Login</button>
+                <form action="{{ url_for('login') }}" method="post">
+                    {{ form.hidden_tag() }}
+                    <div class="input__elem">
+                        {{ form.username(placeholder="username")}}
+                    </div>
+                    <div class="input__elem">
+                        {{ form.password(placeholder="password")}}
+                    </div>
+                    {{ form.login() }}
                 </form>
                 <a href="/registration"><button id="registration">Registration</button></a>
             </div>

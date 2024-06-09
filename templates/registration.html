@@ -26,20 +26,21 @@
     <div id="window">
         <div id="authorisation">
             <div id="authorisation__elem">
-                <form action="/registration" method="post">
+                <form action="{{ url_for('registration') }}" method="post">
+                    {{ form.hidden_tag() }}
                     <div class="input__elem">
-                        <input type="text" placeholder="username">
+                         {{ form.username(placeholder="username")}}
                     </div>
                     <div class="input__elem">
-                        <input type="password" placeholder="password">
+                         {{ form.password(placeholder="password")}}
                     </div>
                     <div class="input__elem">
-                        <input type="text" placeholder="name">
+                        {{ form.name(placeholder="name")}}
                     </div>
                     <div class="input__elem">
-                        <input type="text" placeholder="surname">
+                         {{ form.surname(placeholder="surname")}}
                     </div>
-                    <a href="/login"><button type="submit" id="registration">Registration</button></a>
+                    {{ form.registration() }}
                 </form>
             </div>
         </div>
