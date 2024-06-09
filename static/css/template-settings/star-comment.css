@@ -1,0 +1,23 @@
+.comment {
+    height: 60px;
+    cursor: pointer;
+    background-image: url("../../images/comment.png");
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.comment:hover {
+    transform: scale(1.2);
+    background-image: url("../../images/blackcomment.png");
+
+}
+
+.star {
+    height: 60px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.star:hover {
+    transform: scale(1.15);
+}

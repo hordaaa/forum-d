@@ -1,0 +1,48 @@
+#header {
+    background-color: var(--header-color);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#theme-button {
+    display: inline-block;
+    height: 80%;
+    width: 64px;
+    background-size: 70%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: azure;
+    background-image: url("../../images/day.png");
+    position: absolute;
+    left: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#star-button {
+    display: none;
+    height: 80%;
+    width: 64px;
+    background-size: 70%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: azure;
+    background-image: url("../../images/star.png");
+    position: absolute;
+    left: 85px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#star-button:hover,
+#theme-button:hover {
+    transform: scale(1.05);
+}
+

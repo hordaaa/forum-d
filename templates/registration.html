@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styleclear.css ">
-    <link rel="stylesheet" href="../static/registration.css">
+
+    <link rel="stylesheet" href="../static/css/template-settings/clear.css ">
+    <link rel="stylesheet" href="../static/css/template-settings/root-settings.css">
+    <link rel="stylesheet" href="../static/css/template-settings/header.css">
+    <link rel="stylesheet" href="../static/css/template-settings/post.css">
+    <link rel="stylesheet" href="../static/css/template-settings/outher.css">
+
+    <link rel="stylesheet" href="../static/css/registration.css">
+
     
-    <script src="../static/registration.js" defer></script>
-    <title>Registratuon</title>
+    <script src="../static/javascript/registration.js" type="module" defer></script>
+
+    <title>Registration</title>
 
 </head>
 <body>
@@ -16,8 +24,8 @@
         <a href="/"><h1>Forum-d</h1></a>
     </div>
     <div id="window">
-        <div id="autorisation">
-            <div id="autorisation__elem">
+        <div id="authorisation">
+            <div id="authorisation__elem">
                 <form action="/registration" method="post">
                     <div class="input__elem">
                         <input type="text" placeholder="username">
@@ -31,9 +39,8 @@
                     <div class="input__elem">
                         <input type="text" placeholder="surname">
                     </div>
-                    <a href="/autorisation"><button type="submit" id="registration">Registration</button></a>
+                    <a href="/login"><button type="submit" id="registration">Registration</button></a>
                 </form>
-
             </div>
         </div>
     </div>

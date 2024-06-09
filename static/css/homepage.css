@@ -1,0 +1,135 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    height: 100%;
+}
+
+#posts {
+    display: flex;
+    grid-column: 2/20;
+    align-items: center;
+    flex-direction: column;
+    height: min-content;
+    background-color: var(--text-color);
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+#my-posts {
+    color: var(--center-panel-color);
+    height: 70px;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+}
+
+#user-options{
+    grid-column: 21/30;
+}
+
+#settings {
+    background-color: var(--text-color);
+    height:max-content;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px black;
+    padding-block: 35px;
+    color: var(--center-panel-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#settings:hover {
+    transform: scale(1.04);
+}
+
+#settings-content{
+    top: 20px;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+#username{
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#userid{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    min-width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--center-panel-color);
+}
+
+.avatar-label {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: contain;
+    background-image: url("../images/star.png");
+    background-position: 50%;
+    border: 2px solid var(--center-panel-color);
+    cursor: pointer; 
+}
+    
+.my {
+  display: none;
+}
+
+#bio {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button {
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.18s ease-in-out;
+    border: 1px solid #4FD666;
+    background: linear-gradient(to top right, #3EC97A, #69EA49 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
+    color: #4FD666;
+}
+
+.button:hover {
+    color: white;
+    background-position: bottom left;
+}
+
+#options {
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-block: 20px;
+    height: min-content;
+    background-color: var(--text-color);
+}
+
+
+
+

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for
 
+
 app = Flask(__name__)
 
 
@@ -24,7 +25,7 @@ def registration():
 
 @app.route("/authorisation")
 def authorisation():
-    return render_template("authorisation.html")
+    return render_template("login.html")
 
 
 @app.route("/<int:pos>")
