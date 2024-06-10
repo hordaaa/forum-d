@@ -27,8 +27,8 @@
 }
 
 .post__text{
-    max-width: 93%;
-
+    min-width: 93%;
+    word-break: break-all;
     text-decoration: none;
     color: black;
 }

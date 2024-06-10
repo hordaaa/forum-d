@@ -27,6 +27,9 @@
             <div id="authorisation__elem">
                 <form action="{{ url_for('login') }}" method="post">
                     {{ form.hidden_tag() }}
+                    {% for fl in get_flashed_messages() %}
+                        {{ fl }}
+                    {% endfor %}
                     <div class="input__elem">
                         {{ form.username(placeholder="username")}}
                     </div>

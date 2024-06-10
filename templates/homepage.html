@@ -29,13 +29,16 @@
             <a href="/" id="settings">
                 <div id="settings-content">
                     <label for="avatar" class="avatar-label"></label><input type="file" class="my" id="avatar" name="avatar">
-                    <div id="username"><p>{{ user }}</p></div>
-                    <div id="userid"><p>@Denis</p></div>
-                    <div id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat?</div>
+                    <div id="username"><p>@{{ user.username }}</p></div>
+                    <div id="usernames"><p>{{ user.name }} {{ user.surname }}</p></div>
+                    <div id="bio">{{ user.bio }}</div>
                 </div>
             </a>
             <div id="options">
-                <a href="/" class="button"><p>Add post</p></a>
+                <a href="{{ url_for("addpost") }}" class="button"><p>Add post</p></a>
+            </div>
+            <div id="options">
+                <a href={{ url_for("logout") }} class="button"><p>logout</p></a>
             </div>
         </div> 
     </div>

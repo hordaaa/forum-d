@@ -20,10 +20,16 @@
 <body>
     <div class="main">
         <div id="header">
-            <a href="/starpage" id="star-button"></a>
+            {% if user %}
+                <a href="/starpage" id="star-button"></a>
+            {% endif %}
             <div id="theme-button"></div>
             <a href="/"><h1>Forum-d</h1></a>
-            <div id="user-panel"><a href="/login">log-in</a></div>
+            {% if user %}
+                <a href="/homepage/{{ user }}" id="user-panel"><p>Home</p></a>
+            {% else %}
+                <a href="/login" id="user-panel"><p>login</p></a>
+            {% endif %}
         </div>
         <div class="content">
             <div id="center-panel">
@@ -33,12 +39,18 @@
                     </div>
                 </div>
                 <div id="posts">
-                    <div class="post">
+                    {% for post in posts %}
+                    <div class="post" data-url="{{ post.url }}">
+                        <a href="{{ post.url }}"  class="post__text">
+                            <p>{{ post.title }}</p>
+                            <p>{{ post.content}}</p>
+                        </a>
                         <div class="post__options">
-                            <img src="../static/images/star.png" alt="star image" class="star">
-                            <img src="../static/images/comment.png" alt="star image">
+                            <img src="../static/images/nostar.png" alt="star image" class="star">
+                            <img src="../static/images/comment.png" alt="star image" class="comment">
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -12,7 +12,14 @@
     text-decoration: none;
 }
 
-#user-panel a{
+#user-panel{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+    user-select: none;
+}
+
+#user-panel > p{
     text-decoration: none;
     color: var(--text-color);
     font-size: 30px;

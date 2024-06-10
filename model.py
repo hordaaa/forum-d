@@ -24,5 +24,11 @@ class Posts(db.Model):
 
     author = db.Column(db.Integer, db.ForeignKey("users.id"))
 
+    def __repr__(self):
+        return f"{self.title} {self.content}"
+
+
+
+
 
 

@@ -1,4 +1,4 @@
-import {setThemeMode, update, themeButtonAddClickEvent} from './base.js'
+import {setThemeMode, themeButtonAddClickEvent} from './base.js'
 
 let themeButton = document.getElementById("theme-button")
 
